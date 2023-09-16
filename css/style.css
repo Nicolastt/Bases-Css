@@ -1,7 +1,6 @@
 body {
     background: rgb(255, 251, 172);
     font-family: 'Inclusive Sans', sans-serif;
-    overflow-x: hidden;
 }
 
 .logo {
@@ -168,102 +167,111 @@ form label, form legend {
 }
 
 
-table{
+table {
     margin: 40px 40px;
 }
 
-thead{
+thead {
     background-color: black;
     color: white;
     font-weight: bold;
 }
 
-td, th{
+td, th {
     border: 1px solid black;
     padding: 8px 15px;
 }
 
 /* ! Estilos homepage*/
 
-.titulo-principal{
+.titulo-principal {
     text-align: center;
     font-weight: bold;
     font-size: 2em;
     margin: 1em 0 1em;
 }
 
-.principal{
-
+.titulo-principal:first-letter {
+    font-weight: bold;
+    color: #d76200;
 }
 
-.portada{
+/*
+    main > p : aplica a todos los hijos directos
+    img + p : aplica al siguiente párrafo después de una imagen
+    img ~ p : aplica a todos los párrafos que vengan después de una imagen
+    .principal p: not(#id) : aplica a todos los párrafos de principal excepto al que tenga el id seleccionado
+*/
+
+.portada {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.paz{
+.paz {
     width: 20%;
     float: left;
     margin: 0 20px 10px 0; /*0 top 20 der 20 down 0 izq */
 }
 
-#frase{
+#frase {
     font-size: 25px;
     text-align: center;
     margin: 1em 0 1em;
 }
 
-.portada{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /*height: 50vh;*/
-}
-
-.principal p{
+.principal p {
     margin: 0 0 1em;
     text-align: justify;
     font-size: 20px;
 }
 
-.principal strong{
+.principal strong {
     font-weight: bold;
 }
 
-.principal em{
+.principal em {
     font-style: italic;
 }
 
 
-.imagen-libros{
+.imagen-libros {
     width: 50%;
+    margin: 0 0 0 30px;
+    transition: 400ms;
+    box-shadow: 10px 10px 30px 5px #d78000; /*10px en eje x - 10px en eje y - degradado - expansión - color*/
 }
 
-.mapa{
+.imagen-libros:hover {
+    opacity: 0.3; /* 0% no pase nada de luz / 100% pase toda la luz*/
+}
+
+.mapa {
     text-align: center;
     padding: 2em 0; /*3 VECES el tamaño de la fuente*/
 }
 
-.mapa p{
+.mapa p {
     margin: 0 0 2em;
 }
 
-.contenido-libros{
+.contenido-libros {
     width: 840px;
     margin: 0 auto;
 }
 
-.lista-libros{
+.lista-libros {
     width: 40%;
     display: inline-block;
     vertical-align: top;
 }
 
-.itemLibro{
+.itemLibro {
     font-style: oblique;
     font-size: 1.5em;
     line-height: 1.5;
+
 }
 
 /*
@@ -272,17 +280,39 @@ td, th{
     Pintar uno en específico -> .itemLibro:nth-child(3)
     Pintar todos los pares -> .itemLibro:nth-child(2n)
 */
-.itemLibro:first-child{
+
+.itemLibro:before {
+    content: "❂ ";
+}
+
+.itemLibro:first-child {
     font-weight: bold;
 }
 
-.video{
+.video {
     width: 560px;
     margin: 3em auto;
 }
 
 
+/*Si encuentras una pantalla con menos de 480px haz esto...*/
+@media screen and (max-width: 480px) {
+    h1 {
+        text-align: center;
+    }
 
+    nav {
+        position: static;
+    }
+
+    .cajaMenu, .principal, .mapa, .contenido-libros, .video, .portada, main {
+        width: auto;
+    }
+
+    .lista-libros, .imagen-libros {
+        width: 100%;
+    }
+}
 
 
 
