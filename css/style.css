@@ -179,8 +179,62 @@ td, th{
     padding: 8px 15px;
 }
 
+/* ! Estilos homepage*/
 
+.titulo-principal{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 1em 0 1em;
+}
 
+.portada{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagenLibros{
+    width: 50%;
+}
+
+.titulo-principal{
+    padding-left: 30px;
+}
+
+#frase{
+    font-size: 20px;
+    text-align: center;
+    margin: 1em 0 1em;
+}
+
+.portada{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*height: 50vh;*/
+}
+
+.principal p{
+    margin: 0 0 1em;
+    text-align: justify;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+.libros{
+    padding: 30px;
+}
+
+.itemLibro{
+    font-style: oblique;
+}
 
 
 

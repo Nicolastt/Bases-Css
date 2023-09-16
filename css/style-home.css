@@ -2,9 +2,10 @@ body{
     background: white;
 }
 
-.titulo-centralizado{
+.titulo-principal{
     text-align: center;
 }
+
 
 p{
     text-align: justify;
