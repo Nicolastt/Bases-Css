@@ -1,0 +1,65 @@
+body{
+    background: black;
+}
+
+h1{
+    color: #dab8ff;
+}
+.titulo-centralizado{
+    color: #dab8ff;
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+    color: #9870c0;
+}
+
+strong{
+    color: #c49cea;
+}
+
+strong em{
+    color: #c49cea;
+}
+
+#frase{
+    font-size: 20px;
+    color: #c49cea;
+    text-align: center;
+}
+
+.portada{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*height: 50vh;*/
+}
+
+.principal{
+    padding: 20px;
+}
+
+.libros{
+    padding: 30px;
+}
+
+.itemLibro{
+    color: #9870c0;
+    font-style: oblique;
+}
+
+ul{
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    margin-right: 10%;
+}
+
+.imagenLibros{
+    width: 50%;
+}
+
+.titulo-principal{
+    padding-left: 30px;
+}
