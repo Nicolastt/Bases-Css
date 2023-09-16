@@ -1,31 +1,19 @@
 body{
-    background: black;
+    background: white;
 }
 
-h1{
-    color: #dab8ff;
-}
 .titulo-centralizado{
-    color: #dab8ff;
     text-align: center;
 }
 
 p{
     text-align: justify;
-    color: #9870c0;
 }
 
-strong{
-    color: #c49cea;
-}
 
-strong em{
-    color: #c49cea;
-}
 
 #frase{
     font-size: 20px;
-    color: #c49cea;
     text-align: center;
 }
 
@@ -45,7 +33,6 @@ strong em{
 }
 
 .itemLibro{
-    color: #9870c0;
     font-style: oblique;
 }
 
